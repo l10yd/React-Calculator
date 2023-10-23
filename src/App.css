@@ -1,0 +1,106 @@
+body {
+  background-color:rgb(50, 200, 100)
+}
+
+.App{ 
+  height: 100vh; /* For 100% screen height */
+  width:  100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.mainpanel {
+  height: 410px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white; /* Устанавливаем белый цвет фона */
+  display: flex; /* Добавляем flexbox */
+  flex-direction: column; /* Выравниваем элементы по вертикали */
+  justify-content: center; /* Выравниваем по вертикали по центру */
+  border-radius: 10px;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Выравниваем по центру по вертикали */
+  gap: 10px; /* Расстояние между кнопками */
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-xs-12 {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.headline {
+  font-family: Poppins;
+  font-size: 36px;
+}
+#total {
+  font-family: Roboto;
+  font-size: 30px;
+}
+#mid-input {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+button {
+  font-family: Roboto;
+  border-radius: 8px;
+  border: none;
+  margin: 0 4px 0px 0px;
+  height: 40px;
+  width: 50px;
+  transition: background-color 0.3s; /* Добавляем плавное изменение цвета */
+
+  /* Стили при наведении */
+  &:hover {
+    background-color: rgb(0, 160, 80); /* Новый цвет при наведении */
+  }
+
+  /* Стили при нажатии */
+  &:active {
+    background-color: rgb(0, 120, 60); /* Новый цвет при нажатии */
+  }
+}
+
+#\=, #CE {
+  width: 114px;
+}
+
+#AC, #CE {
+  font-size: 14px;
+  background-color: rgb(50, 200, 100);
+
+  /* Стили при наведении */
+  &:hover {
+    background-color: rgb(0, 160, 80);
+  }
+
+  /* Стили при нажатии */
+  &:active {
+    background-color: rgb(0, 120, 60);
+  }
+}
